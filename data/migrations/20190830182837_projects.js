@@ -13,7 +13,7 @@ exports.up = function(knex) {
     tbl.string('description');
 
   })
-  .createTable('task', tbl => {
+  .createTable('tasks', tbl => {
     tbl.increments();
     tbl.string('description').notNullable();
     tbl.string('notes');
